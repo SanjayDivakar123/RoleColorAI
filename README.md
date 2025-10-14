@@ -129,6 +129,21 @@ OpenAI API (Parsing + Rewriting)
    supabase start
    ```
 
+#### 🤖 AI-Powered Development Tools
+
+**Using Codegen (AI Assistant):**
+- **Slack Integration**: Tag `@codegen` in any channel to get help with code, reviews, or project tasks
+- **Linear Integration**: Mention `@codegen` in Linear issues for automated task completion and updates
+- **Codegen Platform**: Visit [codegen.com](https://codegen.com) to interact directly with the AI assistant
+- **GitHub Integration**: Codegen automatically responds to PR comments and can create/update PRs
+
+**GitHub Copilot (AI Code Completion):**
+- **In GitHub Web Editor**: Press `.` to open web editor, then install GitHub Copilot extension
+- **In Codespaces**: Copilot is pre-installed and ready to use
+- **Usage**: Start typing code and Copilot will suggest completions
+- **Accept Suggestions**: Press `Tab` to accept, `Esc` to dismiss
+- **Alternative Suggestions**: Press `Alt+]` for next suggestion, `Alt+[` for previous
+
 #### 💡 GitHub Editing Tips
 
 - **Quick Edits**: Use the pencil icon for single file changes
