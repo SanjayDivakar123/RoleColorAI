@@ -1,0 +1,56 @@
+{
+  "name": "rolecolorai",
+  "version": "1.0.0",
+  "description": "AI-powered resume rewriting platform through RoleColor profiles",
+  "private": true,
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev:web\" \"npm run dev:api\"",
+    "dev:web": "cd apps/web && npm run dev",
+    "dev:api": "cd apps/api && python -m uvicorn main:app --reload --host 0.0.0.0 --port 8000",
+    "build": "npm run build:web",
+    "build:web": "cd apps/web && npm run build",
+    "start": "npm run start:web",
+    "start:web": "cd apps/web && npm run start",
+    "lint": "npm run lint:web",
+    "lint:web": "cd apps/web && npm run lint",
+    "type-check": "npm run type-check:web",
+    "type-check:web": "cd apps/web && npm run type-check",
+    "test": "npm run test:web",
+    "test:web": "cd apps/web && npm run test",
+    "clean": "rm -rf node_modules apps/*/node_modules apps/*/.next apps/*/dist",
+    "docker:build": "docker-compose build",
+    "docker:up": "docker-compose up -d",
+    "docker:down": "docker-compose down",
+    "supabase:start": "cd infra/supabase && supabase start",
+    "supabase:stop": "cd infra/supabase && supabase stop",
+    "supabase:reset": "cd infra/supabase && supabase db reset",
+    "supabase:migrate": "cd infra/supabase && supabase db push"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "@types/node": "^20.8.0",
+    "typescript": "^5.2.2"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SanjayDivakar123/RoleColorAI.git"
+  },
+  "keywords": [
+    "ai",
+    "resume",
+    "rolecolor",
+    "nextjs",
+    "fastapi",
+    "supabase",
+    "openai"
+  ],
+  "author": "RoleColorFinder Team",
+  "license": "PROPRIETARY"
+}
