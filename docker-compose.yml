@@ -1,0 +1,101 @@
+version: '3.8'
+
+services:
+  # Next.js Frontend
+  web:
+    build:
+      context: ./apps/web
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=development
+      - NEXT_PUBLIC_SUPABASE_URL=${SUPABASE_URL}
+      - NEXT_PUBLIC_SUPABASE_ANON_KEY=${SUPABASE_ANON_KEY}
+      - NEXT_PUBLIC_API_URL=http://localhost:8000
+    volumes:
+      - ./apps/web:/app
+      - /app/node_modules
+      - /app/.next
+    depends_on:
+      - api
+    networks:
+      - rolecolorai-network
+
+  # FastAPI Backend
+  api:
+    build:
+      context: ./apps/api
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    environment:
+      - SUPABASE_URL=${SUPABASE_URL}
+      - SUPABASE_SERVICE_ROLE_KEY=${SUPABASE_SERVICE_ROLE_KEY}
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - OPENAI_MODEL=${OPENAI_MODEL:-gpt-4}
+      - ROLECOLORFINDER_API_URL=${ROLECOLORFINDER_API_URL}
+      - ROLECOLORFINDER_API_KEY=${ROLECOLORFINDER_API_KEY}
+      - CORS_ORIGINS=${CORS_ORIGINS:-http://localhost:3000}
+    volumes:
+      - ./apps/api:/app
+      - ./services:/app/services
+    networks:
+      - rolecolorai-network
+
+  # PostgreSQL Database (optional, if not using Supabase cloud)
+  postgres:
+    image: postgres:15-alpine
+    environment:
+      - POSTGRES_DB=rolecolorai
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./infra/supabase/migrations:/docker-entrypoint-initdb.d
+    networks:
+      - rolecolorai-network
+    profiles:
+      - local-db
+
+  # Redis for caching (optional)
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    networks:
+      - rolecolorai-network
+    profiles:
+      - cache
+
+  # Supabase Local Development (optional)
+  supabase:
+    image: supabase/supabase:latest
+    ports:
+      - "54321:54321"  # Supabase Studio
+      - "54322:54322"  # PostgreSQL
+      - "54323:54323"  # PostgREST
+      - "54324:54324"  # Realtime
+      - "54325:54325"  # Storage
+    environment:
+      - POSTGRES_PASSWORD=postgres
+    volumes:
+      - ./infra/supabase:/supabase
+      - supabase_data:/var/lib/postgresql/data
+    networks:
+      - rolecolorai-network
+    profiles:
+      - supabase-local
+
+volumes:
+  postgres_data:
+  redis_data:
+  supabase_data:
+
+networks:
+  rolecolorai-network:
+    driver: bridge
