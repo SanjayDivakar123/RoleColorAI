@@ -131,7 +131,7 @@ OpenAI API (Parsing + Rewriting)
 
 #### 🤖 AI-Powered Development Tools
 
-**Using Codegen (AI Assistant):**
+**Codegen (AI Assistant):**
 - **Slack Integration**: Tag `@codegen` in any channel to get help with code, reviews, or project tasks
 - **Linear Integration**: Mention `@codegen` in Linear issues for automated task completion and updates
 - **Codegen Platform**: Visit [codegen.com](https://codegen.com) to interact directly with the AI assistant
@@ -143,6 +143,65 @@ OpenAI API (Parsing + Rewriting)
 - **Usage**: Start typing code and Copilot will suggest completions
 - **Accept Suggestions**: Press `Tab` to accept, `Esc` to dismiss
 - **Alternative Suggestions**: Press `Alt+]` for next suggestion, `Alt+[` for previous
+
+**Cursor AI (AI-First IDE):**
+- **Download**: Get Cursor from [cursor.sh](https://cursor.sh) - VS Code fork with built-in AI
+- **AI Chat**: Press `Ctrl+L` to open AI chat for code explanations and generation
+- **Inline Editing**: Press `Ctrl+K` to edit code with AI assistance
+- **Codebase Chat**: Ask questions about your entire codebase with `@codebase`
+
+**ChatGPT/Claude (AI Assistants):**
+- **Code Review**: Paste code snippets for review, optimization, and bug detection
+- **Documentation**: Generate README files, API docs, and code comments
+- **Debugging**: Explain error messages and suggest fixes
+- **Architecture**: Get advice on system design and best practices
+
+**Tabnine (AI Code Completion):**
+- **Installation**: Available as extension for most IDEs
+- **Team Learning**: Learns from your team's coding patterns
+- **Privacy**: Offers on-premises deployment for sensitive code
+
+**Amazon CodeWhisperer:**
+- **Free Tier**: Available for individual developers
+- **Multi-Language**: Supports Python, JavaScript, TypeScript, Java, and more
+- **Security**: Scans for security vulnerabilities in suggestions
+
+**Replit Ghostwriter:**
+- **Browser-Based**: Works directly in Replit's online IDE
+- **Complete Functions**: Generates entire functions from comments
+- **Explain Code**: Provides explanations for complex code sections
+
+#### 📋 Linear - Project Management Platform
+
+**What is Linear?**
+Linear is a modern project management and issue tracking tool designed specifically for software development teams. It focuses on speed, simplicity, and developer-friendly workflows.
+
+**Key Features:**
+- **Issues & Tasks**: Create, assign, and track development tasks with rich descriptions
+- **Projects**: Organize work into projects with roadmaps and milestones
+- **Cycles**: Sprint-like time-boxed periods for iterative development
+- **Teams**: Multi-team support with customizable workflows
+- **Integrations**: Connects with GitHub, Slack, Figma, and development tools
+
+**Getting Started with Linear:**
+1. **Sign Up**: Visit [linear.app](https://linear.app) and create an account
+2. **Create Team**: Set up your development team and invite members
+3. **Import Issues**: Migrate existing issues from GitHub, Jira, or other tools
+4. **Set Up Projects**: Create projects for different features or initiatives
+5. **Configure Integrations**: Connect GitHub for automatic issue linking
+
+**Using Linear Effectively:**
+- **Issue Creation**: Use templates for consistent issue formatting
+- **Labels & Priorities**: Organize issues with custom labels and priority levels
+- **Keyboard Shortcuts**: Press `Cmd+K` (Mac) or `Ctrl+K` (Windows) for quick actions
+- **Views**: Create custom views to filter and organize your work
+- **Notifications**: Set up Slack notifications for important updates
+
+**Linear + Codegen Integration:**
+- Mention `@codegen` in Linear issues for automated task completion
+- Codegen can create PRs, update issue status, and add progress comments
+- Link GitHub PRs to Linear issues automatically
+- Get AI assistance with issue descriptions and acceptance criteria
 
 #### 💡 GitHub Editing Tips
 
