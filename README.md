@@ -183,13 +183,6 @@ Linear is a modern project management and issue tracking tool designed specifica
 - **Teams**: Multi-team support with customizable workflows
 - **Integrations**: Connects with GitHub, Slack, Figma, and development tools
 
-**Getting Started with Linear:**
-1. **Sign Up**: Visit [linear.app](https://linear.app) and create an account
-2. **Create Team**: Set up your development team and invite members
-3. **Import Issues**: Migrate existing issues from GitHub, Jira, or other tools
-4. **Set Up Projects**: Create projects for different features or initiatives
-5. **Configure Integrations**: Connect GitHub for automatic issue linking
-
 **Using Linear Effectively:**
 - **Issue Creation**: Use templates for consistent issue formatting
 - **Labels & Priorities**: Organize issues with custom labels and priority levels
