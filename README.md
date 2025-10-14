@@ -62,30 +62,36 @@ OpenAI API (Parsing + Rewriting)
 - Supabase CLI
 - OpenAI API key
 
-### Local Development Setup
+### Editing the Repository
 
-#### 🎯 Editing in Your Preferred IDE
+#### 🌐 Direct GitHub Editing
 
-**For Cursor IDE:**
-1. Open Cursor and select "Open Folder"
-2. Navigate to your local RoleColorAI directory
-3. Cursor will automatically detect the project structure and provide AI-powered assistance
-4. Install recommended extensions when prompted (TypeScript, Python, Tailwind CSS)
+**Quick File Editing:**
+1. Navigate to any file in the [GitHub repository](https://github.com/SanjayDivakar123/RoleColorAI)
+2. Click the **pencil icon (✏️)** in the top-right corner of the file view
+3. Make your changes directly in the GitHub editor
+4. Scroll down to "Commit changes" section
+5. Add a commit message and click **"Commit changes"**
 
-**For VS Code:**
-1. Open VS Code and use `File > Open Folder`
-2. Select your RoleColorAI project directory
-3. Install recommended extensions:
-   - Python
-   - TypeScript and JavaScript Language Features
-   - Tailwind CSS IntelliSense
-   - Supabase (for database schema)
-   - Docker (for container management)
+**Creating New Files:**
+1. Navigate to the desired folder in the repository
+2. Click **"Add file"** → **"Create new file"**
+3. Name your file and add content
+4. Commit directly to main or create a new branch
 
-**For Other IDEs:**
-- **WebStorm/PyCharm**: Open project folder and configure Python/Node.js interpreters
-- **Sublime Text**: Use `Project > Add Folder to Project`
-- **Vim/Neovim**: Navigate to project directory and use your preferred plugin manager
+**GitHub Web Editor (Advanced):**
+1. Press **`.` (period key)** while viewing the repository
+2. This opens GitHub's VS Code-like web editor
+3. Edit multiple files, navigate the project structure
+4. Use Ctrl+S to save and commit changes
+5. Access terminal, extensions, and full IDE features
+
+**GitHub Codespaces (Cloud Development):**
+1. Click **"Code"** → **"Codespaces"** → **"Create codespace on main"**
+2. Full VS Code environment runs in your browser
+3. Complete development environment with terminal access
+4. Install extensions and run development servers
+5. Changes sync automatically to your repository
 
 #### 🔧 Development Environment Setup
 
@@ -123,12 +129,13 @@ OpenAI API (Parsing + Rewriting)
    supabase start
    ```
 
-#### 💡 IDE-Specific Tips
+#### 💡 GitHub Editing Tips
 
-- **Cursor**: Use Ctrl+K for AI-powered code generation and explanations
-- **VS Code**: Install the "GitHub Copilot" extension for AI assistance
-- **All IDEs**: Set up integrated terminals for running development servers
-- **Debugging**: Configure debugger settings for both Python (FastAPI) and TypeScript (Next.js)
+- **Quick Edits**: Use the pencil icon for single file changes
+- **Bulk Changes**: Press `.` for the web editor when editing multiple files
+- **Keyboard Shortcuts**: In web editor, use Ctrl+Shift+P for command palette
+- **Branch Protection**: Create a branch for major changes to avoid direct main commits
+- **Commit Messages**: Use clear, descriptive commit messages for better project history
 
 ## 📊 Database Schema
 
