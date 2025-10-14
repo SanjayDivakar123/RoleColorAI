@@ -64,25 +64,44 @@ OpenAI API (Parsing + Rewriting)
 
 ### Local Development Setup
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/SanjayDivakar123/RoleColorAI.git
-   cd RoleColorAI
-   ```
+#### 🎯 Editing in Your Preferred IDE
 
-2. **Set up environment variables**
+**For Cursor IDE:**
+1. Open Cursor and select "Open Folder"
+2. Navigate to your local RoleColorAI directory
+3. Cursor will automatically detect the project structure and provide AI-powered assistance
+4. Install recommended extensions when prompted (TypeScript, Python, Tailwind CSS)
+
+**For VS Code:**
+1. Open VS Code and use `File > Open Folder`
+2. Select your RoleColorAI project directory
+3. Install recommended extensions:
+   - Python
+   - TypeScript and JavaScript Language Features
+   - Tailwind CSS IntelliSense
+   - Supabase (for database schema)
+   - Docker (for container management)
+
+**For Other IDEs:**
+- **WebStorm/PyCharm**: Open project folder and configure Python/Node.js interpreters
+- **Sublime Text**: Use `Project > Add Folder to Project`
+- **Vim/Neovim**: Navigate to project directory and use your preferred plugin manager
+
+#### 🔧 Development Environment Setup
+
+1. **Environment Variables**
    ```bash
    cp .env.example .env
    cp apps/web/.env.local.example apps/web/.env.local
    cp apps/api/.env.example apps/api/.env
    ```
 
-3. **Start with Docker Compose**
+2. **Quick Start with Docker**
    ```bash
    docker-compose up -d
    ```
 
-4. **Or run services individually:**
+3. **Manual Setup (for detailed development):**
 
    **Frontend (Next.js):**
    ```bash
@@ -103,6 +122,13 @@ OpenAI API (Parsing + Rewriting)
    cd infra/supabase
    supabase start
    ```
+
+#### 💡 IDE-Specific Tips
+
+- **Cursor**: Use Ctrl+K for AI-powered code generation and explanations
+- **VS Code**: Install the "GitHub Copilot" extension for AI assistance
+- **All IDEs**: Set up integrated terminals for running development servers
+- **Debugging**: Configure debugger settings for both Python (FastAPI) and TypeScript (Next.js)
 
 ## 📊 Database Schema
 
