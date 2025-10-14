@@ -62,30 +62,36 @@ OpenAI API (Parsing + Rewriting)
 - Supabase CLI
 - OpenAI API key
 
-### Local Development Setup
+### Editing the Repository
 
-#### 🎯 Editing in Your Preferred IDE
+#### 🌐 Direct GitHub Editing
 
-**For Cursor IDE:**
-1. Open Cursor and select "Open Folder"
-2. Navigate to your local RoleColorAI directory
-3. Cursor will automatically detect the project structure and provide AI-powered assistance
-4. Install recommended extensions when prompted (TypeScript, Python, Tailwind CSS)
+**Quick File Editing:**
+1. Navigate to any file in the [GitHub repository](https://github.com/SanjayDivakar123/RoleColorAI)
+2. Click the **pencil icon (✏️)** in the top-right corner of the file view
+3. Make your changes directly in the GitHub editor
+4. Scroll down to "Commit changes" section
+5. Add a commit message and click **"Commit changes"**
 
-**For VS Code:**
-1. Open VS Code and use `File > Open Folder`
-2. Select your RoleColorAI project directory
-3. Install recommended extensions:
-   - Python
-   - TypeScript and JavaScript Language Features
-   - Tailwind CSS IntelliSense
-   - Supabase (for database schema)
-   - Docker (for container management)
+**Creating New Files:**
+1. Navigate to the desired folder in the repository
+2. Click **"Add file"** → **"Create new file"**
+3. Name your file and add content
+4. Commit directly to main or create a new branch
 
-**For Other IDEs:**
-- **WebStorm/PyCharm**: Open project folder and configure Python/Node.js interpreters
-- **Sublime Text**: Use `Project > Add Folder to Project`
-- **Vim/Neovim**: Navigate to project directory and use your preferred plugin manager
+**GitHub Web Editor (Advanced):**
+1. Press **`.` (period key)** while viewing the repository
+2. This opens GitHub's VS Code-like web editor
+3. Edit multiple files, navigate the project structure
+4. Use Ctrl+S to save and commit changes
+5. Access terminal, extensions, and full IDE features
+
+**GitHub Codespaces (Cloud Development):**
+1. Click **"Code"** → **"Codespaces"** → **"Create codespace on main"**
+2. Full VS Code environment runs in your browser
+3. Complete development environment with terminal access
+4. Install extensions and run development servers
+5. Changes sync automatically to your repository
 
 #### 🔧 Development Environment Setup
 
@@ -123,12 +129,80 @@ OpenAI API (Parsing + Rewriting)
    supabase start
    ```
 
-#### 💡 IDE-Specific Tips
+#### 🤖 AI-Powered Development Tools
 
-- **Cursor**: Use Ctrl+K for AI-powered code generation and explanations
-- **VS Code**: Install the "GitHub Copilot" extension for AI assistance
-- **All IDEs**: Set up integrated terminals for running development servers
-- **Debugging**: Configure debugger settings for both Python (FastAPI) and TypeScript (Next.js)
+**Codegen (AI Assistant):**
+- **Slack Integration**: Tag `@codegen` in any channel to get help with code, reviews, or project tasks
+- **Linear Integration**: Mention `@codegen` in Linear issues for automated task completion and updates
+- **Codegen Platform**: Visit [codegen.com](https://codegen.com) to interact directly with the AI assistant
+- **GitHub Integration**: Codegen automatically responds to PR comments and can create/update PRs
+
+**GitHub Copilot (AI Code Completion):**
+- **In GitHub Web Editor**: Press `.` to open web editor, then install GitHub Copilot extension
+- **In Codespaces**: Copilot is pre-installed and ready to use
+- **Usage**: Start typing code and Copilot will suggest completions
+- **Accept Suggestions**: Press `Tab` to accept, `Esc` to dismiss
+- **Alternative Suggestions**: Press `Alt+]` for next suggestion, `Alt+[` for previous
+
+**Cursor AI (AI-First IDE):**
+- **Download**: Get Cursor from [cursor.sh](https://cursor.sh) - VS Code fork with built-in AI
+- **AI Chat**: Press `Ctrl+L` to open AI chat for code explanations and generation
+- **Inline Editing**: Press `Ctrl+K` to edit code with AI assistance
+- **Codebase Chat**: Ask questions about your entire codebase with `@codebase`
+
+**ChatGPT/Claude (AI Assistants):**
+- **Code Review**: Paste code snippets for review, optimization, and bug detection
+- **Documentation**: Generate README files, API docs, and code comments
+- **Debugging**: Explain error messages and suggest fixes
+- **Architecture**: Get advice on system design and best practices
+
+**Tabnine (AI Code Completion):**
+- **Installation**: Available as extension for most IDEs
+- **Team Learning**: Learns from your team's coding patterns
+- **Privacy**: Offers on-premises deployment for sensitive code
+
+**Amazon CodeWhisperer:**
+- **Free Tier**: Available for individual developers
+- **Multi-Language**: Supports Python, JavaScript, TypeScript, Java, and more
+- **Security**: Scans for security vulnerabilities in suggestions
+
+**Replit Ghostwriter:**
+- **Browser-Based**: Works directly in Replit's online IDE
+- **Complete Functions**: Generates entire functions from comments
+- **Explain Code**: Provides explanations for complex code sections
+
+#### 📋 Linear - Project Management Platform
+
+**What is Linear?**
+Linear is a modern project management and issue tracking tool designed specifically for software development teams. It focuses on speed, simplicity, and developer-friendly workflows.
+
+**Key Features:**
+- **Issues & Tasks**: Create, assign, and track development tasks with rich descriptions
+- **Projects**: Organize work into projects with roadmaps and milestones
+- **Cycles**: Sprint-like time-boxed periods for iterative development
+- **Teams**: Multi-team support with customizable workflows
+- **Integrations**: Connects with GitHub, Slack, Figma, and development tools
+
+**Using Linear Effectively:**
+- **Issue Creation**: Use templates for consistent issue formatting
+- **Labels & Priorities**: Organize issues with custom labels and priority levels
+- **Keyboard Shortcuts**: Press `Cmd+K` (Mac) or `Ctrl+K` (Windows) for quick actions
+- **Views**: Create custom views to filter and organize your work
+- **Notifications**: Set up Slack notifications for important updates
+
+**Linear + Codegen Integration:**
+- Mention `@codegen` in Linear issues for automated task completion
+- Codegen can create PRs, update issue status, and add progress comments
+- Link GitHub PRs to Linear issues automatically
+- Get AI assistance with issue descriptions and acceptance criteria
+
+#### 💡 GitHub Editing Tips
+
+- **Quick Edits**: Use the pencil icon for single file changes
+- **Bulk Changes**: Press `.` for the web editor when editing multiple files
+- **Keyboard Shortcuts**: In web editor, use Ctrl+Shift+P for command palette
+- **Branch Protection**: Create a branch for major changes to avoid direct main commits
+- **Commit Messages**: Use clear, descriptive commit messages for better project history
 
 ## 📊 Database Schema
 
