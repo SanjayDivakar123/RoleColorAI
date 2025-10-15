@@ -100,10 +100,19 @@ RoleColorAI. (White #FFFFFF)
 - Ensure visibility at 16x16px minimum
 - Provide multiple sizes: 16x16, 32x32, 48x48, 64x64
 
-## 📄 File Formats
+## 📄 Available Logo Files
+
+### Current Logo Assets
+- **`rolecolor-logo.svg`**: Official RoleColor AI logo in SVG format
+  - Contains "Role Color AI." text in brand colors
+  - Red (#ee2e2d) for "Role"
+  - Yellow (#fedc33) for "Color" 
+  - Blue (#4985c5) for "AI"
+  - Green (#38b772) accent elements
+  - Scalable vector format suitable for all applications
 
 ### Required Formats
-- **SVG**: Vector format for web and scalable applications
+- **SVG**: Vector format for web and scalable applications ✅
 - **PNG**: High-resolution (300 DPI) with transparent background
 - **JPG**: High-resolution (300 DPI) on white background
 - **PDF**: Vector format for print applications
