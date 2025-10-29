@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🐱 Purrfect Cats - The Ultimate Cat Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-brand">
+                <h1>🐱 Purrfect Cats</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#breeds">Breeds</a></li>
+                <li><a href="#facts">Fun Facts</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Welcome to the Purrfect World of Cats! 🐾</h1>
+                <p>Discover amazing cat breeds, adorable photos, and fascinating feline facts</p>
+                <button class="cta-button" onclick="scrollToSection('gallery')">Explore Cats</button>
+            </div>
+            <div class="hero-cats">
+                <div class="floating-cat">🐱</div>
+                <div class="floating-cat">😸</div>
+                <div class="floating-cat">😺</div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="gallery">
+            <div class="container">
+                <h2>Cat Gallery 📸</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=400&h=300&fit=crop" alt="Orange tabby cat">
+                        <div class="gallery-overlay">
+                            <h3>Orange Tabby</h3>
+                            <p>Playful and friendly</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1573865526739-10659fec78a5?w=400&h=300&fit=crop" alt="Siamese cat">
+                        <div class="gallery-overlay">
+                            <h3>Siamese</h3>
+                            <p>Elegant and vocal</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1596854407944-bf87f6fdd49e?w=400&h=300&fit=crop" alt="Maine Coon">
+                        <div class="gallery-overlay">
+                            <h3>Maine Coon</h3>
+                            <p>Gentle giant</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1592194996308-7b43878e84a6?w=400&h=300&fit=crop" alt="British Shorthair">
+                        <div class="gallery-overlay">
+                            <h3>British Shorthair</h3>
+                            <p>Calm and dignified</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1574158622682-e40e69881006?w=400&h=300&fit=crop" alt="Persian cat">
+                        <div class="gallery-overlay">
+                            <h3>Persian</h3>
+                            <p>Fluffy and serene</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1571566882372-1598d88abd90?w=400&h=300&fit=crop" alt="Bengal cat">
+                        <div class="gallery-overlay">
+                            <h3>Bengal</h3>
+                            <p>Wild and energetic</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Breeds Section -->
+        <section id="breeds" class="breeds">
+            <div class="container">
+                <h2>Popular Cat Breeds 🐈</h2>
+                <div class="breeds-grid">
+                    <div class="breed-card">
+                        <div class="breed-icon">😸</div>
+                        <h3>Persian</h3>
+                        <p>Known for their long, luxurious coat and calm temperament. Perfect lap cats!</p>
+                        <div class="breed-stats">
+                            <span>Affection: ⭐⭐⭐⭐⭐</span>
+                            <span>Energy: ⭐⭐</span>
+                        </div>
+                    </div>
+                    <div class="breed-card">
+                        <div class="breed-icon">😺</div>
+                        <h3>Maine Coon</h3>
+                        <p>Large, friendly cats with tufted ears and bushy tails. Great with families!</p>
+                        <div class="breed-stats">
+                            <span>Affection: ⭐⭐⭐⭐</span>
+                            <span>Energy: ⭐⭐⭐</span>
+                        </div>
+                    </div>
+                    <div class="breed-card">
+                        <div class="breed-icon">😻</div>
+                        <h3>Siamese</h3>
+                        <p>Vocal and social cats with striking blue eyes and pointed coloration.</p>
+                        <div class="breed-stats">
+                            <span>Affection: ⭐⭐⭐⭐⭐</span>
+                            <span>Energy: ⭐⭐⭐⭐</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Fun Facts Section -->
+        <section id="facts" class="facts">
+            <div class="container">
+                <h2>Amazing Cat Facts! 🤔</h2>
+                <div class="facts-container">
+                    <div class="fact-card" onclick="flipCard(this)">
+                        <div class="fact-front">
+                            <div class="fact-icon">🐾</div>
+                            <h3>Did you know?</h3>
+                            <p>Click to reveal a fun fact!</p>
+                        </div>
+                        <div class="fact-back">
+                            <p>Cats have 32 muscles in each ear, allowing them to rotate their ears 180 degrees!</p>
+                        </div>
+                    </div>
+                    <div class="fact-card" onclick="flipCard(this)">
+                        <div class="fact-front">
+                            <div class="fact-icon">😴</div>
+                            <h3>Sleep Champions</h3>
+                            <p>Click to learn more!</p>
+                        </div>
+                        <div class="fact-back">
+                            <p>Cats sleep 12-16 hours a day. That's 70% of their lives spent napping!</p>
+                        </div>
+                    </div>
+                    <div class="fact-card" onclick="flipCard(this)">
+                        <div class="fact-front">
+                            <div class="fact-icon">🏃‍♂️</div>
+                            <h3>Speed Demons</h3>
+                            <p>Click to discover!</p>
+                        </div>
+                        <div class="fact-back">
+                            <p>Cats can run up to 30 mph and can jump up to 6 times their length!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Get in Touch! 📧</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Love cats as much as we do?</h3>
+                        <p>Share your cat photos and stories with us!</p>
+                        <div class="contact-details">
+                            <p>📧 hello@purrfectcats.com</p>
+                            <p>📱 Follow us @PurrfectCats</p>
+                            <p>🐱 Share your cat pics with #PurrfectMoments</p>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <form id="catForm">
+                            <input type="text" placeholder="Your Name" required>
+                            <input type="email" placeholder="Your Email" required>
+                            <textarea placeholder="Tell us about your cat!" rows="4" required></textarea>
+                            <button type="submit">Send Meow-ssage! 🐱</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Purrfect Cats. Made with ❤️ for cat lovers everywhere!</p>
+            <div class="footer-cats">
+                <span>🐱</span>
+                <span>😸</span>
+                <span>😺</span>
+                <span>😻</span>
+                <span>🙀</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
