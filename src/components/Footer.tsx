@@ -1,4 +1,5 @@
 import logoWhite from "@/assets/logo-white.svg";
+import rcfWhite from "@/assets/rcf-white.svg";
 
 const Footer = () => {
   return (
@@ -25,9 +26,10 @@ const Footer = () => {
             </a>
           </div>
 
-          <p className="text-xs text-muted-foreground">
-            Powered by RoleColorFinder
-          </p>
+          <div className="flex items-center gap-2 text-xs text-muted-foreground">
+            <span>Powered by</span>
+            <img src={rcfWhite} alt="RoleColorFinder" className="h-4 opacity-70" />
+          </div>
         </div>
       </div>
     </footer>
