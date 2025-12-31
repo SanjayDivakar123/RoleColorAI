@@ -42,7 +42,7 @@ const ForWho = () => {
               initial={{ opacity: 0, x: -30 }}
               animate={isInView ? { opacity: 1, x: 0 } : {}}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="rounded-2xl border border-primary/20 bg-primary/5 p-8"
+              className="rounded-2xl border border-brand-green/20 bg-brand-green/5 p-8"
             >
               <h3 className="mb-6 text-lg font-medium text-foreground">
                 This is for:
@@ -50,8 +50,8 @@ const ForWho = () => {
               <ul className="space-y-4">
                 {forItems.map((item, index) => (
                   <li key={index} className="flex items-start gap-3">
-                    <div className="mt-0.5 rounded-full bg-primary/20 p-1">
-                      <Check className="h-3.5 w-3.5 text-primary" />
+                    <div className="mt-0.5 rounded-full bg-brand-green/20 p-1">
+                      <Check className="h-3.5 w-3.5 text-brand-green" />
                     </div>
                     <span className="text-sm text-muted-foreground">{item}</span>
                   </li>

@@ -7,21 +7,25 @@ const steps = [
     number: "01",
     title: "Input",
     description: "Input resumes, roles, or team context",
+    color: "brand-blue",
   },
   {
     number: "02",
     title: "Analyze",
     description: "RoleColorAI analyzes structure + execution",
+    color: "brand-yellow",
   },
   {
     number: "03",
     title: "Surface",
     description: "Clear insights surface — not scores",
+    color: "brand-green",
   },
   {
     number: "04",
     title: "Decide",
     description: "Better decisions happen upstream",
+    color: "primary",
   },
 ];
 
@@ -50,7 +54,7 @@ const HowItWorks = () => {
 
           <div className="relative">
             {/* Connection line */}
-            <div className="absolute left-8 top-0 hidden h-full w-px bg-gradient-to-b from-border via-primary/50 to-border md:left-1/2 md:block" />
+            <div className="absolute left-8 top-0 hidden h-full w-px bg-gradient-to-b from-brand-blue via-brand-green to-primary md:left-1/2 md:block" />
 
             <div className="space-y-8 md:space-y-12">
               {steps.map((step, index) => (
@@ -64,8 +68,8 @@ const HowItWorks = () => {
                   }`}
                 >
                   <div className={`flex-1 ${index % 2 === 1 ? "md:text-right" : ""}`}>
-                    <div className="rounded-xl border border-border/50 bg-card/30 p-6">
-                      <span className="mb-2 block text-xs font-medium text-primary">
+                    <div className={`rounded-xl border border-${step.color}/20 bg-card/30 p-6`}>
+                      <span className={`mb-2 block text-xs font-medium text-${step.color}`}>
                         {step.number}
                       </span>
                       <h3 className="mb-1 text-lg font-medium text-foreground">
@@ -78,7 +82,7 @@ const HowItWorks = () => {
                   </div>
 
                   {/* Center dot */}
-                  <div className="absolute left-8 z-10 hidden h-3 w-3 -translate-x-1/2 rounded-full border-2 border-primary bg-background md:left-1/2 md:block" />
+                  <div className={`absolute left-8 z-10 hidden h-3 w-3 -translate-x-1/2 rounded-full border-2 border-${step.color} bg-background md:left-1/2 md:block`} />
 
                   <div className="hidden flex-1 md:block" />
                 </motion.div>

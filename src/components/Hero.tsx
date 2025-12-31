@@ -13,9 +13,11 @@ const Hero = () => {
 
   return (
     <section className="relative min-h-screen overflow-hidden pt-16">
-      {/* Ambient glow */}
+      {/* Ambient glow - multi-color */}
       <div className="pointer-events-none absolute inset-0">
-        <div className="absolute left-1/2 top-1/4 h-[600px] w-[600px] -translate-x-1/2 rounded-full bg-primary/10 blur-[120px] animate-glow-pulse" />
+        <div className="absolute left-1/4 top-1/4 h-[500px] w-[500px] -translate-x-1/2 rounded-full bg-brand-blue/10 blur-[120px] animate-glow-pulse" />
+        <div className="absolute right-1/4 top-1/3 h-[400px] w-[400px] translate-x-1/2 rounded-full bg-brand-green/10 blur-[100px] animate-glow-pulse" style={{ animationDelay: '1s' }} />
+        <div className="absolute left-1/2 top-1/2 h-[300px] w-[300px] -translate-x-1/2 rounded-full bg-primary/8 blur-[80px] animate-glow-pulse" style={{ animationDelay: '2s' }} />
       </div>
 
       <div className="container relative mx-auto flex min-h-[calc(100vh-4rem)] flex-col items-center justify-center px-6 text-center">
