@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import { User, Brain } from "lucide-react";
+import rcfLogo from "@/assets/rcf-color.svg";
+import rcaiLogo from "@/assets/logo-color.svg";
 
 const rcfPoints = [
   "Decision style",
@@ -46,14 +47,9 @@ const Distinction = () => {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="rounded-2xl border border-border/50 bg-card/30 p-8"
             >
-              <div className="mb-6 flex items-center gap-3">
-                <div className="rounded-lg bg-secondary p-2">
-                  <User className="h-5 w-5 text-secondary-foreground" />
-                </div>
-                <div>
-                  <h3 className="text-lg font-medium text-foreground">RoleColorFinder</h3>
-                  <p className="text-sm text-muted-foreground">How people are built</p>
-                </div>
+              <div className="mb-6">
+                <img src={rcfLogo} alt="RoleColorFinder" className="h-8 mb-3" />
+                <p className="text-sm text-muted-foreground">How people are built</p>
               </div>
               <ul className="space-y-3">
                 {rcfPoints.map((point, index) => (
@@ -72,16 +68,9 @@ const Distinction = () => {
               transition={{ duration: 0.5, delay: 0.3 }}
               className="rounded-2xl border border-primary/30 bg-card/50 p-8"
             >
-              <div className="mb-6 flex items-center gap-3">
-                <div className="rounded-lg bg-primary/10 p-2">
-                  <Brain className="h-5 w-5 text-primary" />
-                </div>
-                <div>
-                  <h3 className="text-lg font-medium text-foreground">
-                    RoleColor<span className="gradient-text">AI</span>
-                  </h3>
-                  <p className="text-sm text-muted-foreground">How well they can execute</p>
-                </div>
+              <div className="mb-6">
+                <img src={rcaiLogo} alt="RoleColorAI" className="h-8 mb-3" />
+                <p className="text-sm text-muted-foreground">How well they can execute</p>
               </div>
               <ul className="space-y-3">
                 {rcaiPoints.map((point, index) => (
