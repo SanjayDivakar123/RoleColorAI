@@ -45,7 +45,7 @@ const Distinction = () => {
               initial={{ opacity: 0, x: -30 }}
               animate={isInView ? { opacity: 1, x: 0 } : {}}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="rounded-2xl border border-border/50 bg-card/30 p-8"
+              className="rounded-2xl border border-brand-blue/30 bg-card/30 p-8"
             >
               <div className="mb-6">
                 <img src={rcfLogo} alt="RoleColorFinder" className="h-8 mb-3" />
@@ -54,7 +54,7 @@ const Distinction = () => {
               <ul className="space-y-3">
                 {rcfPoints.map((point, index) => (
                   <li key={index} className="flex items-center gap-3 text-sm text-muted-foreground">
-                    <div className="h-1.5 w-1.5 rounded-full bg-muted-foreground/50" />
+                    <div className="h-1.5 w-1.5 rounded-full bg-brand-blue/70" />
                     {point}
                   </li>
                 ))}
@@ -66,7 +66,7 @@ const Distinction = () => {
               initial={{ opacity: 0, x: 30 }}
               animate={isInView ? { opacity: 1, x: 0 } : {}}
               transition={{ duration: 0.5, delay: 0.3 }}
-              className="rounded-2xl border border-primary/30 bg-card/50 p-8"
+              className="rounded-2xl border border-brand-green/30 bg-card/50 p-8"
             >
               <div className="mb-6">
                 <img src={rcaiLogo} alt="RoleColorAI" className="h-8 mb-3" />
@@ -75,7 +75,7 @@ const Distinction = () => {
               <ul className="space-y-3">
                 {rcaiPoints.map((point, index) => (
                   <li key={index} className="flex items-center gap-3 text-sm text-muted-foreground">
-                    <div className="h-1.5 w-1.5 rounded-full bg-primary/70" />
+                    <div className="h-1.5 w-1.5 rounded-full bg-brand-green/70" />
                     {point}
                   </li>
                 ))}

@@ -8,16 +8,19 @@ const features = [
     icon: Target,
     title: "Role Fit",
     description: "Does this role align with how they naturally operate?",
+    color: "brand-blue",
   },
   {
     icon: Zap,
     title: "Execution Readiness",
     description: "Can they perform at the required level right now?",
+    color: "brand-yellow",
   },
   {
     icon: Battery,
     title: "Energy Sustainability",
     description: "Will this role amplify or drain them over time?",
+    color: "brand-green",
   },
 ];
 
@@ -52,10 +55,10 @@ const WhatItDoes = () => {
                 initial={{ opacity: 0, y: 30 }}
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.5, delay: 0.15 * index }}
-                className="group relative overflow-hidden rounded-xl border border-border/50 bg-card/50 p-6 transition-all duration-300 hover:border-primary/30 hover:bg-card"
+                className={`group relative overflow-hidden rounded-xl border border-border/50 bg-card/50 p-6 transition-all duration-300 hover:border-${feature.color}/30 hover:bg-card`}
               >
-                <div className="mb-4 inline-flex rounded-lg bg-primary/10 p-3">
-                  <feature.icon className="h-6 w-6 text-primary" />
+                <div className={`mb-4 inline-flex rounded-lg bg-${feature.color}/10 p-3`}>
+                  <feature.icon className={`h-6 w-6 text-${feature.color}`} />
                 </div>
                 <h3 className="mb-2 text-lg font-medium text-foreground">
                   {feature.title}
