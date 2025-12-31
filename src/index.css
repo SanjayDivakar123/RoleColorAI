@@ -6,44 +6,53 @@
 
 @layer base {
   :root {
-    --background: 222 47% 5%;
+    --background: 220 20% 6%;
     --foreground: 210 20% 95%;
 
-    --card: 222 40% 8%;
+    --card: 220 18% 9%;
     --card-foreground: 210 20% 95%;
 
-    --popover: 222 40% 8%;
+    --popover: 220 18% 9%;
     --popover-foreground: 210 20% 95%;
 
-    --primary: 38 92% 60%;
-    --primary-foreground: 222 47% 5%;
+    /* Brand Red - Primary */
+    --primary: 1 85% 55%;
+    --primary-foreground: 210 20% 98%;
 
-    --secondary: 222 30% 12%;
+    --secondary: 220 15% 14%;
     --secondary-foreground: 210 20% 85%;
 
-    --muted: 222 25% 15%;
-    --muted-foreground: 215 15% 55%;
+    --muted: 220 12% 18%;
+    --muted-foreground: 215 12% 55%;
 
-    --accent: 38 92% 60%;
-    --accent-foreground: 222 47% 5%;
+    /* Brand Yellow - Accent */
+    --accent: 48 98% 60%;
+    --accent-foreground: 220 20% 6%;
 
-    --destructive: 0 84% 60%;
+    --destructive: 1 85% 55%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 222 25% 18%;
-    --input: 222 25% 18%;
-    --ring: 38 92% 60%;
+    --border: 220 15% 20%;
+    --input: 220 15% 20%;
+    --ring: 1 85% 55%;
 
     --radius: 0.5rem;
 
+    /* Brand Colors */
+    --brand-red: 1 85% 55%;
+    --brand-yellow: 48 98% 60%;
+    --brand-blue: 210 85% 55%;
+    --brand-green: 150 65% 45%;
+
     /* Custom tokens */
-    --gradient-primary: linear-gradient(135deg, hsl(38 92% 60%) 0%, hsl(28 95% 55%) 100%);
-    --gradient-subtle: linear-gradient(180deg, hsl(222 47% 8%) 0%, hsl(222 47% 5%) 100%);
-    --gradient-card: linear-gradient(145deg, hsl(222 35% 10%) 0%, hsl(222 40% 6%) 100%);
-    --gradient-glow: radial-gradient(ellipse at center, hsl(38 92% 60% / 0.15) 0%, transparent 70%);
+    --gradient-primary: linear-gradient(135deg, hsl(1 85% 55%) 0%, hsl(48 98% 60%) 100%);
+    --gradient-subtle: linear-gradient(180deg, hsl(220 20% 9%) 0%, hsl(220 20% 6%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(220 18% 11%) 0%, hsl(220 18% 7%) 100%);
+    --gradient-glow: radial-gradient(ellipse at center, hsl(1 85% 55% / 0.15) 0%, transparent 70%);
+    --gradient-brand: linear-gradient(90deg, hsl(1 85% 55%) 0%, hsl(48 98% 60%) 50%, hsl(150 65% 45%) 100%);
     
-    --shadow-glow: 0 0 60px hsl(38 92% 60% / 0.2);
-    --shadow-card: 0 4px 24px hsl(222 47% 3% / 0.5);
+    --shadow-glow: 0 0 60px hsl(1 85% 55% / 0.2);
+    --shadow-card: 0 4px 24px hsl(220 20% 3% / 0.5);
     
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-bounce: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
