@@ -46,6 +46,16 @@ const Hero = () => {
               How it Works
             </Button>
           </div>
+
+          <a 
+            href="https://rolecolorfinder.com" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="mt-8 inline-flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-brand-blue"
+          >
+            Visit RoleColorFinder
+            <ArrowRight className="h-4 w-4" />
+          </a>
         </motion.div>
 
         {/* Scroll indicator */}

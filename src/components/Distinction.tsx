@@ -47,10 +47,15 @@ const Distinction = () => {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="rounded-2xl border border-brand-blue/30 bg-card/30 p-8"
             >
-              <div className="mb-6">
-                <img src={rcfLogo} alt="RoleColorFinder" className="h-8 mb-3" />
+              <a 
+                href="https://rolecolorfinder.com" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="mb-6 block"
+              >
+                <img src={rcfLogo} alt="RoleColorFinder" className="h-8 mb-3 transition-opacity hover:opacity-80" />
                 <p className="text-sm text-muted-foreground">How people are built</p>
-              </div>
+              </a>
               <ul className="space-y-3">
                 {rcfPoints.map((point, index) => (
                   <li key={index} className="flex items-center gap-3 text-sm text-muted-foreground">
