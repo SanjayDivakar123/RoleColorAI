@@ -16,11 +16,11 @@ const Header = () => {
       className="fixed top-0 left-0 right-0 z-50 border-b border-border/50 bg-background/80 backdrop-blur-xl"
     >
       <div className="container mx-auto flex h-20 items-center justify-between px-6">
-        <a href="/" className="flex flex-col items-start gap-1">
+        <a href="/" className="flex flex-col items-start gap-0.5">
           <img src={logoWhite} alt="RoleColorAI" className="h-6" />
-          <div className="flex items-center gap-1.5">
-            <span className="text-[10px] text-muted-foreground">powered by</span>
-            <img src={rcfColor} alt="RoleColorFinder" className="h-3" />
+          <div className="flex flex-col items-start">
+            <span className="text-[9px] text-muted-foreground leading-tight">powered by</span>
+            <img src={rcfColor} alt="RoleColorFinder" className="h-2.5" />
           </div>
         </a>
         
