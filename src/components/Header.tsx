@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import logoWhite from "@/assets/logo-white.svg";
-import rcfColor from "@/assets/rcf-color.svg";
 
 const Header = () => {
   const scrollToWaitlist = () => {
@@ -16,12 +15,8 @@ const Header = () => {
       className="fixed top-0 left-0 right-0 z-50 border-b border-border/50 bg-background/80 backdrop-blur-xl"
     >
       <div className="container mx-auto flex h-16 items-center justify-between px-6">
-        <a href="/" className="flex items-center gap-4">
+        <a href="/" className="flex items-center">
           <img src={logoWhite} alt="RoleColorAI" className="h-7" />
-          <div className="flex flex-col items-start border-l border-border/50 pl-4">
-            <span className="text-[9px] text-muted-foreground leading-tight">powered by</span>
-            <img src={rcfColor} alt="RoleColorFinder" className="h-3" />
-          </div>
         </a>
         
         <nav className="hidden items-center gap-8 md:flex">
