@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
+import logoWhite from "@/assets/logo-white.svg";
 
 const Header = () => {
   const scrollToWaitlist = () => {
@@ -14,11 +15,9 @@ const Header = () => {
       className="fixed top-0 left-0 right-0 z-50 border-b border-border/50 bg-background/80 backdrop-blur-xl"
     >
       <div className="container mx-auto flex h-16 items-center justify-between px-6">
-        <div className="flex items-center gap-2">
-          <span className="text-xl font-semibold text-foreground">
-            RoleColor<span className="gradient-text">AI</span>
-          </span>
-        </div>
+        <a href="/" className="flex items-center">
+          <img src={logoWhite} alt="RoleColorAI" className="h-7" />
+        </a>
         
         <nav className="hidden items-center gap-8 md:flex">
           <a href="#how-it-works" className="text-sm text-muted-foreground transition-colors hover:text-foreground">
