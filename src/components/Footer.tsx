@@ -26,10 +26,15 @@ const Footer = () => {
             </a>
           </div>
 
-          <div className="flex items-center gap-2 text-xs text-muted-foreground">
+          <a 
+            href="https://rolecolorfinder.com" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 text-xs text-muted-foreground transition-opacity hover:opacity-100"
+          >
             <span>Powered by</span>
-            <img src={rcfWhite} alt="RoleColorFinder" className="h-4 opacity-70" />
-          </div>
+            <img src={rcfWhite} alt="RoleColorFinder" className="h-4 opacity-70 transition-opacity hover:opacity-100" />
+          </a>
         </div>
       </div>
     </footer>
