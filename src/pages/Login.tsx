@@ -13,7 +13,7 @@ const Login = () => {
 
   const handleLogin = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Login attempt with:", email, password);
+    console.log("Login attempt with:", email);
     // Integrate Supabase auth here in the future
   };
 
