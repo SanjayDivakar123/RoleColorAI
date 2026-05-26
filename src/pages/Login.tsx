@@ -13,7 +13,7 @@ const Login = () => {
 
   const handleLogin = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Login attempt with:", email);
+    console.log("Login attempt with:", email, password);
     // Integrate Supabase auth here in the future
   };
 
@@ -31,7 +31,7 @@ const Login = () => {
             </CardHeader>
             <CardContent>
               <TabsContent value="login">
-                <CardTitle className="text-2xl mb-2 text-center">Login with a RoleColorAI Account</CardTitle>
+                <CardTitle className="text-2xl mb-2 text-center">Login with a RoleColorFinder Account</CardTitle>
                 <CardDescription className="mb-6 text-center">
                   Enter your email and password to log in.
                 </CardDescription>
