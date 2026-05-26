@@ -31,7 +31,7 @@ const Login = () => {
             </CardHeader>
             <CardContent>
               <TabsContent value="login">
-                <CardTitle className="text-2xl mb-2 text-center">Login with a RoleColorFinder Account</CardTitle>
+                <CardTitle className="text-2xl mb-2 text-center">Login with a RoleColorAI Account</CardTitle>
                 <CardDescription className="mb-6 text-center">
                   Enter your email and password to log in.
                 </CardDescription>
