@@ -26,14 +26,22 @@ const Header = () => {
           <a href="#for-who" className="text-sm text-muted-foreground transition-colors hover:text-foreground">
             Who It's For
           </a>
+          <a href="/login" className="text-sm text-muted-foreground transition-colors hover:text-foreground">
+            Login
+          </a>
           <Button variant="hero" size="sm" onClick={scrollToWaitlist}>
             Request Early Access
           </Button>
         </nav>
 
-        <Button variant="hero" size="sm" className="md:hidden" onClick={scrollToWaitlist}>
-          Get Access
-        </Button>
+        <div className="md:hidden flex items-center gap-4">
+          <a href="/login" className="text-sm text-muted-foreground transition-colors hover:text-foreground">
+            Login
+          </a>
+          <Button variant="hero" size="sm" onClick={scrollToWaitlist}>
+            Get Access
+          </Button>
+        </div>
       </div>
     </motion.header>
   );
