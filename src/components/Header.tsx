@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import logoWhite from "@/assets/logo-white.svg";
 
@@ -15,9 +16,9 @@ const Header = () => {
       className="fixed top-0 left-0 right-0 z-50 border-b border-border/50 bg-background/80 backdrop-blur-xl"
     >
       <div className="container mx-auto flex h-16 items-center justify-between px-6">
-        <a href="/" className="flex items-center">
+        <Link to="/" className="flex items-center">
           <img src={logoWhite} alt="RoleColorAI" className="h-7" />
-        </a>
+        </Link>
         
         <nav className="hidden items-center gap-8 md:flex">
           <a href="#how-it-works" className="text-sm text-muted-foreground transition-colors hover:text-foreground">
@@ -26,18 +27,18 @@ const Header = () => {
           <a href="#for-who" className="text-sm text-muted-foreground transition-colors hover:text-foreground">
             Who It's For
           </a>
-          <a href="/login" className="text-sm text-muted-foreground transition-colors hover:text-foreground">
+          <Link to="/login" className="text-sm text-muted-foreground transition-colors hover:text-foreground">
             Login
-          </a>
+          </Link>
           <Button variant="hero" size="sm" onClick={scrollToWaitlist}>
             Request Early Access
           </Button>
         </nav>
 
         <div className="md:hidden flex items-center gap-4">
-          <a href="/login" className="text-sm text-muted-foreground transition-colors hover:text-foreground">
+          <Link to="/login" className="text-sm text-muted-foreground transition-colors hover:text-foreground">
             Login
-          </a>
+          </Link>
           <Button variant="hero" size="sm" onClick={scrollToWaitlist}>
             Get Access
           </Button>
